@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Uzma Bagwan - Professional Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            color: #222;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 1.2s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .profile-container {
+            max-width: 420px;
+            background: rgba(255,255,255,0.95);
+            border-radius: 28px;
+            box-shadow: 0 12px 40px rgba(44, 62, 80, 0.18);
+            padding: 48px 36px 36px 36px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .profile-container::before {
+            content: "";
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 160px;
+            height: 160px;
+            background: linear-gradient(135deg, #6a89cc 0%, #b8e994 100%);
+            border-radius: 50%;
+            opacity: 0.18;
+            z-index: 0;
+        }
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fda085;
+            margin-bottom: 24px;
+            background: #fff;
+            box-shadow: 0 4px 18px rgba(44,62,80,0.12);
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        .profile-img:hover {
+            transform: scale(1.07) rotate(-2deg);
+        }
+        h1 {
+            font-size: 2.3em;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            color: #fda085;
+            letter-spacing: 1.5px;
+        }
+        h2 {
+            font-size: 1.15em;
+            font-weight: 500;
+            color: #6a89cc;
+            margin-bottom: 24px;
+            letter-spacing: 1.2px;
+        }
+        .bio {
+            font-size: 1.07em;
+            color: #444;
+            margin-bottom: 28px;
+            line-height: 1.7;
+            background: #e0eafc;
+            border-radius: 10px;
+            padding: 16px 12px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+        }
+        .social-links {
+            margin-bottom: 18px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 12px;
+            color: #6a89cc;
+            font-size: 1.6em;
+            transition: color 0.2s, transform 0.2s;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #fda085;
+            transform: scale(1.15);
+        }
+        .skills {
+            margin-top: 32px;
+            text-align: left;
+        }
+        .skills-title {
+            font-weight: 700;
+            color: #6a89cc;
+            margin-bottom: 10px;
+            font-size: 1.13em;
+            letter-spacing: 1px;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills-list li {
+            background: linear-gradient(90deg, #f6d365 0%, #fda085 100%);
+            border-radius: 8px;
+            padding: 8px 16px;
+            margin-bottom: 8px;
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 1em;
+            color: #222;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+    <img src="https://sdk.bitmoji.com/render/panel/10222654-99423447_2-s5-v1.png?transparent=1&palette=1" alt="Uzma Bagwan Bitmoji Hijab" class="profile-img">
+    <h1>Uzma Bagwan</h1>
+    <h2>Professional | Creative | Visionary</h2>
+        <div class="bio">
+            Experienced professional with a passion for innovation and excellence. Skilled in project management, communication, and creative problem-solving. Dedicated to delivering outstanding results and building strong professional relationships.<br><br>
+            <span style="color:#6a89cc;font-weight:600;">Let's connect and create something amazing together!</span>
+        </div>
+        <div class="social-links">
+            <a href="https://linkedin.com/" target="_blank" title="LinkedIn">
+                <svg width="24" height="24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.93-2-2-2s-2 .93-2 2v4.5h-3v-9h3v1.22c.41-.63 1.36-1.22 2.5-1.22 2.07 0 3.5 1.43 3.5 4.08v5.92z"/></svg>
+            </a>
+            <a href="mailto:uzma@example.com" title="Email">
+                <svg width="24" height="24" fill="currentColor"><path d="M20 4h-16c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-12c0-1.1-.9-2-2-2zm0 2v.01l-8 5.01-8-5.01v-.01h16zm-16 12v-10.99l8 5.01 8-5.01v10.99h-16z"/></svg>
+            </a>
+        </div>
+        <div class="skills">
+            <div class="skills-title">Skills</div>
+            <ul class="skills-list">
+                <li>Project Management</li>
+                <li>Communication</li>
+                <li>Leadership</li>
+                <li>Creative Thinking</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html></a>
